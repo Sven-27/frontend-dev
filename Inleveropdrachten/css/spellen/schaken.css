@@ -16,7 +16,6 @@ section{
   width: 100%;
   border: 2px solid #c0c0c0;
   margin-block-end: 5px;
-  box-sizing: content-box;
 }
 
 /* Bovenste sectie - afbeeldingen + tabel */
@@ -62,16 +61,15 @@ figure > figcaption{
   background-color: #fff;
 }
 
-.bordspellen > table{
+.schema{
   width: 50%;
   border: 1px solid #000;
   font-size: small;
   box-sizing: border-box;
 }
 
-th{
+.schema th{
   background-color: #7fffd4;
-  width: 33%;
   font-size: 12px;
   padding-block: 5px;
 }
@@ -108,14 +106,16 @@ th{
   padding: 1rem;
 }
 
-.schaakbord table{
+.schaken{
   width: 100%;
   height: 100%;
   border: 2px solid #ff0000;
   border-spacing: 0;
+  box-sizing: border-box;
 }
 
-.schaakbord .achtergrond-grijs{
+.schaken tr:nth-child(odd) > td:nth-child(2n+2),
+.schaken tr:nth-child(even) > td:nth-child(2n+1){
   background-color: #818181;
 }
 
