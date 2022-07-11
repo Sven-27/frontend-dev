@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestelformulier</title>
+</head>
+<body>
+  <h1>Bestel Formulier</h1>
+  <form action="" method="">
+    <div>
+      <label for="name">Naam:</label>
+      <input type="text" name="name" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+      <label for="telefoonnummer">Telefoonnummer:</label>
+      <input type="number" name="telefoonnummer" id="telefoonnummer" required>
+    </div>
+    <div>
+      <label for="product">Nike T-shirt:</label>
+      <select name="product" id="product">
+        <option value="">Kies de juiste maat</option>
+        <option value="size-s">Size S</option>
+        <option value="size-m">Size M</option>
+        <option value="size-l">Size L</option>
+        <option value="size-xl">Size XL</option>
+        <option value="size-xxl">Size XXL</option>
+      </select>   
+    </div>
+    <div>
+      <label for="product">Oordoppen:</label>
+      <select name="product" id="product">
+        <option value="">Kies de kleur</option>
+        <option value="wit">Wit</option>
+        <option value="blauw">Blauw</option>
+        <option value="Groen">Groen</option>
+        <option value="Zwart">Zwart</option>
+        <option value="Grijs">Grijs</option>
+      </select>   
+    </div>
+    <div>
+      <fieldset>
+        <legend>Factuuradres</legend>
+          <label for="address">Adres:</label>
+          <input type="text" name="adress" id="adress">
+          <label for="huisnummer">Huisnummer:</label>
+          <input type="number" name="huisnummer" id="huisnummer">    
+          <label for="postcode">Postcode:</label>
+          <input type="text" name="postcode" id="postcode">
+          <label for="plaats">Plaats:</label>
+          <input type="text" name="plaats" id="plaats">
+      </fieldset>
+      <label for="factuur">Is het Afleveradres hetzelfde als het factuuradres:</label>
+      Ja<input type="radio" name="factuur" id="factuur" value="ja" checked>
+      <fieldset>
+        <legend>Afleveradres</legend>
+          <label for="address">Adres:</label>
+          <input type="text" name="adress" id="adress">
+          <label for="huisnummer">Huisnummer:</label>
+          <input type="number" name="huisnummer" id="huisnummer">    
+          <label for="postcode">Postcode:</label>
+          <input type="text" name="postcode" id="postcode">
+          <label for="plaats">Plaats:</label>
+          <input type="text" name="plaats" id="plaats">
+      </fieldset>
+      <div>
+      <label for="address">Adres:</label>
+      <input type="text" name="adress" id="adress">
+      <label for="huisnummer">Huisnummer:</label>
+      <input type="number" name="huisnummer" id="huisnummer">
+      </div>
+      <div>
+        <label for="postcode">Postcode:</label>
+        <input type="text" name="postcode" id="postcode">
+        <label for="plaats">Plaats:</label>
+        <input type="text" name="plaats" id="plaats">
+      </div>
+    </div>
+    <button>Naar betalen</button>
+  </form>
+</body>
+</html>

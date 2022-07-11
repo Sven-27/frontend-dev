@@ -1,0 +1,122 @@
+/* Door de validator gekomen */
+
+body{
+  width: 850px;
+  margin: 0 auto;
+}
+
+/* Styling voor beide secties */
+
+section{
+  width: 100%;
+  border: 2px solid #c0c0c0;
+  margin-block-end: 5px;
+}
+
+/* Bovenste sectie - afbeeldingen + tabel */
+
+.bordspellen{
+  display: flow-root;
+}
+
+section > h3{
+  text-align: center;
+}
+
+.bordspellen > figure{
+  width: 400px;
+  margin: 0 auto;
+  margin-block-end: 10px;
+  border: 1px solid #c0c0c0;
+  padding: 3px;
+}
+
+figure > figcaption{
+  text-align: center;
+}
+
+.bordspellen img{
+  width: 100%;
+}
+
+.bordspellen >div{
+  float: left;
+  width: 50%;
+  height: 200px;
+  background-image: url("./images/rotsen.jpg");
+}
+
+.bordspellen > div > p{
+  text-align: center;
+  padding: 1em;
+  border: 24px solid rgba(255,255,255,.5);
+  margin: 3em;
+  background-clip: padding-box;
+  background-color: #fff;
+}
+
+.bordspellen > table{
+  width: 50%;
+  height: 200px;
+  border: 1px solid #000;
+  font-size: small;
+}
+
+th{
+  background-color: #7fffd4;
+  width: 33%;
+  font-size: 12px;
+  padding-block: 5px;
+}
+
+.naam{
+  background-color: #c5c58f;
+}
+
+.leeftijd{
+  background-color:#ae9368;
+  text-align: center;
+}
+
+.streepje{
+  text-align: center;
+}
+
+.spelers{
+  background-color: #d79f50;
+  text-align: center;
+}
+
+/* Onderste sectie - schaakbord */
+
+.schaakbord > div{
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 1rem solid #000;
+  margin-block-end: 2rem;
+  padding: 1rem;
+}
+
+.schaakbord table{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff0000;
+  border-spacing: 0;
+}
+
+.schaakbord .achtergrond-grijs{
+  background-color: #818181;
+}
+
+.schaakbord td{
+  font-size: 2.5rem;
+  text-align: center;
+  width: 12.5%;
+  height: 12.5%;
+}
+
+
+
+
+

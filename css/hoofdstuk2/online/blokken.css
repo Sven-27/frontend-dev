@@ -1,0 +1,16 @@
+.container{
+  box-sizing: content-box;
+  width: 800px;
+  border: 0.25rem solid blue;
+  display: flow-root;
+}
+
+.col{
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0;
+  padding: 0.5rem;
+  border: 0.15rem silver ridge;
+  text-align: center;
+  float: left;
+}

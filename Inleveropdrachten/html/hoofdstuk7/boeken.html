@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vakantie boeken</title>
+</head>
+<!-- Pagina is door de validator gekomen -->
+<body>
+  <header>
+    <h1>Accomodatie boeken</h1>
+    <p>Op deze pagina kunt u een kamer in ons hotel boeken en nog een aantal foto's en een filmpje bekijken.</p>
+  </header>
+  <main>
+    <form id="reserveren" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+      <h2>Adresgegevens</h2>
+      <p><label>Naam: <input type="text" id="naam" name="naam" required /></label></p>
+      <p><label>Adres: <input type="text" id="adres" name="adres" required /></label></p>
+      <p><label>Postcode: <small>4 cijfers plus 2 letters</small> <input type="text" id="postcode" name="postcode" pattern="^[1-9][0-9]{3}\s?[a-zA-Z]{2}$" required /></label></p>
+      <p><label>Woonplaats: <input type="text" id="woonplaats" name="woonplaats" required /></label></p>
+      <p><label>Telefoonnummer: <input type="tel" id="telefoon" name="telefoon" required /></label></p>
+      <p><label>Email: <small>john@doe.com</small> <input type="email" id="email" name="email" /></label></p>
+    </form>
+    <section>
+      <h2>Reservering</h2>
+        <p><label>Aantal personen: <input form="reserveren" type="number" min="1" max="10" required></label></p>
+        <p><label>Aankomst datum: <input form="reserveren" type="date" required></label></p>
+        <p><label>Verblijfsduur: <input form="reserveren" id="slider" type="range" min="2" max="20" step="2"><span class="waarde"></span></label> dagen</p>
+        <p>
+          <label>Verzorging: 
+            <select form="reserveren" name="verzorging" id="verzorging">
+              <option value="logies">Logies</option>
+              <option value="logies-met-ontbijt">Logies met ontbijt</option>
+              <option value="halfpension">Halfpension</option>
+              <option value="volpension">Volpension</option>
+            </select>
+          </label>
+        </p>
+        <fieldset>
+          <legend>Annuleringsverzekering:</legend>
+          <label for="ja">Ja: </label><input form="reserveren" type="radio" id="ja" name="annuleringsverzekering" value="ja">
+          <label for="nee">Nee: </label><input form="reserveren" type="radio" id="nee" name="annuleringsverzekering" value="nee">
+          </fieldset>
+        <p><label for="opmerkingen">Opmerkingen: <textarea form="reserveren" name="opmerkingen" id="opmerkingen" cols="30" rows="10"></textarea></label></p>
+        <button form="reserveren" type="submit">Reserveer</button>
+      </section>
+    </main>
+  <section id="media">
+    <h2>Foto's</h2>
+    <figure>
+      <img src="./media/aanrecht-hotel.jpg" width="300" alt="Een afbeelding van het aanrecht in de hotelkamer" />
+      <figcaption>Aanrecht in de hotelkamer</figcaption>
+    </figure>
+    <figure>
+      <img src="./media/bed-hotel.jpg" width="300" alt="Een afbeelding van het bed in de hotelkamer" />
+      <figcaption>Het bed in de hotelkamer</figcaption>
+    </figure>
+    <figure>
+      <img src="./media/badkamer-hotel.jpg" width="300" alt="Een afbeelding van de badkamer in de hotelkamer" />
+      <figcaption>De badkamer in de hotelkamer</figcaption>
+    </figure>
+    <figure>
+      <img src="./media/balkon-view.avif"  width="300" alt="Een afbeelding van het balkon in de hotelkamer met een prachtig uitzicht" />
+      <figcaption>Het balkon in de hotelkamer</figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>Filmpje</h2>
+    <p>Een kort inspiratiefilmpje van de mooie omgeving.</p>
+  <video controls>
+      <source src="./media/video-spanje.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <script>
+    var slider = document.getElementById("slider");
+    var output = document.querySelector(".waarde");
+    output.innerHTML = slider.value;
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+  </script>
+</body>
+</html>

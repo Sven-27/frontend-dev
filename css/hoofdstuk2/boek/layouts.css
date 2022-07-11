@@ -1,0 +1,45 @@
+body{
+  width: 100vw;
+  display: flex;
+}
+
+article{
+  width: 600px;
+  height: 100%;
+  padding: 1rem;
+}
+
+.first > figure{
+  width: 250px;
+  float: left;
+}
+
+.first img{
+  width: 100%;
+  
+}
+
+.second > figure{
+  width: 250px;
+  float: right;
+}
+
+.multi-column{
+  width: 650px;
+  column-width: 200px;
+  column-count: 3;
+}
+
+.multi-column > h2{
+  column-span: all;
+  text-align: center;
+}
+
+.multi-column > figure{
+  width: 180px;
+  break-inside: avoid-column;
+}
+
+.multi-column img{
+  width: 100%;
+}

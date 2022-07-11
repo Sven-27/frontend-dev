@@ -1,0 +1,37 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  color: #444;
+}
+
+h1{
+  margin-left: 2rem;
+  font-size: 4rem;
+  color: #630000;
+}
+
+h1::before{
+  content: "**";
+  color:#ff007b;
+}
+
+h1::after{
+  content: "**";
+  color:#ff007b;
+}
+
+h2{
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: #003200;
+}
+
+p{
+  margin-left: 4rem;
+  color: #000;
+}
+
+p::first-letter{
+  font-size: 3rem;
+  color: #0015ff;
+}
