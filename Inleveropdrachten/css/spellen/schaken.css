@@ -1,8 +1,13 @@
 /* Door de validator gekomen */
 
 body{
-  width: 850px;
-  margin: 0 auto;
+  width: 100vw;
+  
+}
+
+main{
+  width: 1024px;
+  margin-inline: auto;  
 }
 
 /* Styling voor beide secties */
@@ -11,6 +16,7 @@ section{
   width: 100%;
   border: 2px solid #c0c0c0;
   margin-block-end: 5px;
+  box-sizing: content-box;
 }
 
 /* Bovenste sectie - afbeeldingen + tabel */
@@ -19,16 +25,17 @@ section{
   display: flow-root;
 }
 
-section > h3{
+section > h2{
   text-align: center;
 }
 
 .bordspellen > figure{
   width: 400px;
-  margin: 0 auto;
+  margin-inline: auto;
   margin-block-end: 10px;
   border: 1px solid #c0c0c0;
   padding: 3px;
+  box-sizing: border-box;
 }
 
 figure > figcaption{
@@ -42,8 +49,8 @@ figure > figcaption{
 .bordspellen >div{
   float: left;
   width: 50%;
-  height: 200px;
   background-image: url("./images/rotsen.jpg");
+  box-sizing: border-box;
 }
 
 .bordspellen > div > p{
@@ -57,9 +64,9 @@ figure > figcaption{
 
 .bordspellen > table{
   width: 50%;
-  height: 200px;
   border: 1px solid #000;
   font-size: small;
+  box-sizing: border-box;
 }
 
 th{
@@ -69,28 +76,31 @@ th{
   padding-block: 5px;
 }
 
-.naam{
-  background-color: #c5c58f;
+.schema td:first-child{
+  background-color: #bda980;
 }
 
-.leeftijd{
-  background-color:#ae9368;
+.schema td:nth-child(2),
+.schema td:nth-child(4){
+  background-color: #ae9368;
   text-align: center;
 }
 
-.streepje{
+.schema td:nth-child(3),
+.schema td:nth-child(6){
   text-align: center;
 }
 
-.spelers{
+.schema td:nth-child(5),
+.schema td:last-child{
+  text-align: center;
   background-color: #d79f50;
-  text-align: center;
 }
 
 /* Onderste sectie - schaakbord */
 
 .schaakbord > div{
-  margin: 0 auto;
+  margin-inline: auto;
   width: 500px;
   height: 500px;
   border: 1rem solid #000;
