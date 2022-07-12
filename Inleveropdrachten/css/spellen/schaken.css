@@ -1,19 +1,19 @@
 /* Door de validator gekomen */
 
 body{
-  width: 100vw;
+  inline-size: 100vw;
   
 }
 
 main{
-  width: 1024px;
+  inline-size: 1024px;
   margin-inline: auto;  
 }
 
 /* Styling voor beide secties */
 
 section{
-  width: 100%;
+  inline-size: 100%;
   border: 2px solid #c0c0c0;
   margin-block-end: 5px;
 }
@@ -29,7 +29,7 @@ section > h2{
 }
 
 .bordspellen > figure{
-  width: 400px;
+  inline-size: 400px;
   margin-inline: auto;
   margin-block-end: 10px;
   border: 1px solid #c0c0c0;
@@ -42,12 +42,12 @@ figure > figcaption{
 }
 
 .bordspellen img{
-  width: 100%;
+  inline-size: 100%;
 }
 
 .bordspellen >div{
   float: left;
-  width: 50%;
+  inline-size: 50%;
   background-image: url("./images/rotsen.jpg");
   box-sizing: border-box;
 }
@@ -62,7 +62,7 @@ figure > figcaption{
 }
 
 .schema{
-  width: 50%;
+  inline-size: 50%;
   border: 1px solid #000;
   font-size: small;
   box-sizing: border-box;
@@ -99,19 +99,16 @@ figure > figcaption{
 
 .schaakbord > div{
   margin-inline: auto;
-  width: 500px;
-  height: 500px;
+  inline-size: max-content;
   border: 1rem solid #000;
   margin-block-end: 2rem;
   padding: 1rem;
 }
 
 .schaken{
-  width: 100%;
-  height: 100%;
   border: 2px solid #ff0000;
   border-spacing: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .schaken tr:nth-child(odd) > td:nth-child(2n+2),
@@ -122,8 +119,8 @@ figure > figcaption{
 .schaakbord td{
   font-size: 2.5rem;
   text-align: center;
-  width: 12.5%;
-  height: 12.5%;
+  inline-size: 4rem;
+  block-size: 4rem;
 }
 
 
