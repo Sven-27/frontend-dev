@@ -51,3 +51,59 @@ input{
 input:focus{
   outline: none;
 }
+
+
+.plannen{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plannen p{
+  background-color: transparent;
+  padding-inline: 10px;
+  padding-block-end: 5px;
+  inline-size: max-content;
+  color: rgb(4, 4, 101);
+  font-weight: 200;
+  border-bottom: 2px solid #dca901;
+  border-radius: 0;
+}
+
+.plannen p:first-child{
+  border-block-end-color:#040465
+}
+
+.plannen p:nth-child(2){
+  color: #8c6c02;
+  margin-inline-end: 10px;
+}
+
+.plannen p:nth-child(3),
+.plannen p:nth-child(4),
+.plannen p:nth-child(5){
+  margin-inline-end: 10px;
+}
+
+.plannen p:nth-child(4),
+.plannen p:nth-child(5),
+.plannen p:nth-child(6){
+  margin-block-start: 0px;
+}
+
+.plannen p > i{
+  margin-inline-end: 5px;
+}
+
+.plannen + button{
+  background-color: #2839f3;
+  color: #fff;
+  inline-size: 100%;
+  border: none;
+  padding-block: 10px;
+  border-radius: 5px;
+}
+
+.plannen + button:focus{
+  outline: none;
+}

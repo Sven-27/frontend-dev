@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="ns.css">
+  <script src="https://kit.fontawesome.com/e4f670ff17.js" crossorigin="anonymous"></script>
   <title>NS Layout</title>
 </head>
 <body>
@@ -15,9 +16,21 @@
       action="#" 
       method="POST"
     >
-      <p><label>van <input type="text" name="plaats" placeholder="adres, station of postcode"></label></p>
-      <p class="naar"><label>naar <input type="text" name="plaats" placeholder="adres, station of postcode"></label></p>
+      <div>
+        <p><label>van <input type="text" name="plaats" placeholder="adres, station of postcode"></label></p>
+        <p class="naar"><label>naar <input type="text" name="plaats" placeholder="adres, station of postcode"></label></p>
+      </div>
+      <div class="plannen">
+        <p>Vertrek</p>
+        <p>Aankomst</p>
+        <p><i class="fa-solid fa-calendar-day"></i>Vandaag</p>
+        <p><i class="fa-regular fa-clock"></i>19:21</p>
+        <p><i class="fa-solid fa-arrows-rotate"></i>Nu</p>
+        <p><i class="fa-solid fa-gear"></i>Opties</p>
+      </div>
+      <button>Plannen en aanmelden</button>
     </form>
+    <hr>
   </main>
 </body>
 </html>
