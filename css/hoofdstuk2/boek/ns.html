@@ -10,27 +10,33 @@
 </head>
 <body>
   <main>
-    <h2>Plan je reis</h2>
+    <h1>Plan je reis</h2>
     <form 
       id="bestemming" 
       action="#" 
       method="POST"
     >
-      <div>
-        <p><label>van <input type="text" name="plaats" placeholder="adres, station of postcode"></label></p>
+      <section class="location">
+        <p><label>van <input type="text" name="plaats" placeholder="adres, station of postcode"></label><i class="fa-solid arrows-small fa-arrow-right-arrow-left"></i></p>
+        <p class="arrows-big"><i class="fa-solid fa-arrow-right-arrow-left"></i></p>
         <p class="naar"><label>naar <input type="text" name="plaats" placeholder="adres, station of postcode"></label></p>
-      </div>
-      <div class="plannen">
+      </section>
+      <section class="plannen">
         <p>Vertrek</p>
         <p>Aankomst</p>
         <p><i class="fa-solid fa-calendar-day"></i>Vandaag</p>
         <p><i class="fa-regular fa-clock"></i>19:21</p>
         <p><i class="fa-solid fa-arrows-rotate"></i>Nu</p>
         <p><i class="fa-solid fa-gear"></i>Opties</p>
-      </div>
+      </section>
       <button>Plannen en aanmelden</button>
     </form>
     <hr>
+    <section class="storingen">
+      <p><i class="fa-solid fa-triangle-exclamation"></i><a href="#">Verstoringen (11)</a><i class="fa-solid fa-angle-up"></i></p>
+      <p><a href="#">Meer reisinformatie</a><i class="fa-solid fa-angle-up"></i></p>
+      <p><a href="#">Mijn aanmeldingen</a><i class="fa-solid fa-angle-up"></i></p>
+    </section>
   </main>
 </body>
 </html>
