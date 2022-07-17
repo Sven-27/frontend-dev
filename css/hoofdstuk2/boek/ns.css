@@ -233,13 +233,26 @@ hr{
   
   .storingen > p:nth-child(2){
     display: inline;
-    margin-inline-end: 5rem;
+    flex: 1;
+    margin-inline-start: 2rem;
   }
 }
 
 /* large screen */
 
 @media screen and (min-width: 1440px){
+ main{
+  padding-inline: 20%;
+ }
  
+ .plannen + button{
+  inline-size: max-content;
+  padding-inline: 2rem;
+ }
+
+ .storingen > p:nth-child(2){
+  flex: 1;
+  margin-inline-start: 3rem;
+ }
 }
 
