@@ -203,8 +203,14 @@ hr{
     margin-block-start: 15px;
   }
 
+  .plannen-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .plannen{
     display: flex;
+    inline-size: 60%;
   }
 
   .plannen p:nth-child(4),
@@ -212,5 +218,28 @@ hr{
   .plannen p:nth-child(6){
      margin-block-start: 16px;
 }
+
+  .plannen + button{
+    inline-size: 30%;
+    block-size: max-content;
+    padding-block: 15px;
+  }
+
+  .storingen{
+    display: flex;
+    inline-size: 100;
+    justify-content: space-between;
+    }
+  
+  .storingen > p:nth-child(2){
+    display: inline;
+    margin-inline-end: 5rem;
+  }
+}
+
+/* large screen */
+
+@media screen and (min-width: 1440px){
+ 
 }
 
