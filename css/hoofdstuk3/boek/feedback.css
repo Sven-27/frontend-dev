@@ -1,0 +1,16 @@
+body{
+  position: relative;
+}
+
+p{
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+
+p{
+  padding: 10px 5px;
+  margin-top: -1rem;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+}

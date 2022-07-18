@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+  inline-size: 100vw;
+  block-size: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-areas: 
+  "header header header header"
+  "article article article aside"
+  "footer footer footer footer";
+}
+
+header{
+  grid-area: header;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+article{
+  grid-area: article;
+  background-color: #888;
+  padding: 10px;
+}
+
+aside{
+  grid-area: aside;
+  background-color: #fff;
+  padding: 10px;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
