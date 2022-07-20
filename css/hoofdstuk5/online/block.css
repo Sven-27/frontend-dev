@@ -1,0 +1,5 @@
+.container{
+  inline-size: 800px;
+  block-size: 800px;
+  border: 1px solid black;
+}
