@@ -2,4 +2,43 @@
   inline-size: 800px;
   block-size: 800px;
   border: 1px solid black;
+  display: flow-root;
+}
+
+.block{
+  inline-size: 250px;
+  block-size: 250px;
+  margin: 20px;
+  float: left;
+}
+
+.item1{
+  /* inline-size: 100%; */
+  /* background-image: url("./img/aas.jpg"),
+  url("./img/aas.jpg");
+  background-size: 30px;
+  background-position-x: center;
+  background-position-y: top, bottom;
+  background-color: rgb(255,0,0);
+  background-repeat: no-repeat; */
+  background: url(./img/aas.jpg) center top/20% no-repeat, url(./img/aas.jpg) center bottom/20% no-repeat, url(./img/azen.jpg) center left/180% no-repeat black;
+}
+
+.item2{
+  background-color: rgb(0,255,0);
+  background-image: url("./img/aas.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+}
+
+.item3{
+  background-color: rgb(0,0,255);
+  background-image: linear-gradient(to bottom, red 15px, blue 15px);
+  background-size: 1px 30px;
+  background-repeat: repeat;
+}
+
+.item4{
+  background-color: rgb(255,255,0);
+  background-image: radial-gradient(circle, white 50px, blue);
 }
