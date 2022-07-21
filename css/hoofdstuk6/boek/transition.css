@@ -1,0 +1,29 @@
+.transition a{
+  display: block;
+  padding: .5em;
+  font: 700 1.2em sans-serif;
+  color: rgb(50,100,150);
+  transition: all .5s cubic-bezier(0.42,0.0,0.58,1.0) .05s;
+}
+
+.transition a:hover,
+.transition a:focus{
+  background-color: rgb(50,100,150);
+  color: rgb(255,255,255);
+  transition: all .2s ease-in-out .05s;
+}
+
+button{
+  background-color: tomato;
+  color: #fff;
+  font: 700 3em sans-serif;
+  padding: 1em;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  transition-duration: .5s;
+}
+
+.clicked{
+  background-color: turquoise;
+  color: darkblue;
+}
