@@ -1,0 +1,60 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+nav{
+  inline-size: 150px;
+  /* block-size: 500px; */
+  position: relative;
+}
+
+label{
+  display: block;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: purple;
+  color: bisque;
+}
+
+label::after{
+  content: "+"
+}
+
+input{
+  display: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 70px;
+  width: 150px;
+  transform-origin: center -40px;
+  transform: scaleY(0);
+  transition: all .3s ease-out;
+}
+
+a{
+  text-decoration: none;
+  color: teal;
+  font-size: 1em;
+  display: block;
+  padding: 1em;
+}
+
+.menu:hover{
+  background: rgb(0,255,34);
+  color: rgb(255, 0, 255);
+}
+
+input:checked ~ ul{
+  transform: scaleY(1);
+}
+
+input:checked ~ label::after{
+  content: " -";
+}

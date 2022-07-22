@@ -1,0 +1,10 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+div{
+  height: 50vh;
+  width: calc((100vw / 3) - ((4 * 1em) / 3));
+  background: gray;
+}

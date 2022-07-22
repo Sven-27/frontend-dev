@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.block{
+  width: 40%;
+  height: 40%;
+  border: 2px solid red;
+}
+
+.item1{
+  background: yellow;
+  transform: rotate(15deg);
+  transform: skew(120deg);
+}
+.item2{
+  background: green;
+  transform: rotate(45deg);
+  transform: skew(-120deg);
+}
+.item3{
+  background: blue;
+  transform: rotate(120deg);
+  transform: skew(120deg);
+}
+.item4{
+  background: orange;
+  transform: rotate(135deg);
+  transform: skew(250deg);
+}
