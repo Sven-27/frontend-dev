@@ -27,6 +27,7 @@
   background: green;
   transform: rotate(45deg);
   transform: skew(-120deg);
+  overflow-x: hidden;
 }
 .item3{
   background: blue;
@@ -37,4 +38,5 @@
   background: orange;
   transform: rotate(135deg);
   transform: skew(250deg);
+  overflow-x: hidden;
 }
