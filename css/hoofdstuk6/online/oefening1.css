@@ -1,0 +1,71 @@
+*{
+  margin:0;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  block-size: 100vh;
+  background-image: linear-gradient(to bottom, red 33%, white 33%, white 66%,  blue 33%);
+
+ /* background-image: linear-gradient(to right, red, white ,blue); */
+
+/* background-image: linear-gradient(to bottom, red, white ,blue); */
+
+/* background-image: linear-gradient(to bottom, red 33%, white 33% ,blue 33%);  */
+}
+
+.block{
+  inline-size: 200px;
+  block-size: 200px; 
+  border: 1px solid black;
+  color: #f00;
+  animation-name: color-wheel;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  --text-size: 10px;
+  font-size: 5px;
+}
+
+@keyframes color-wheel{
+  0%{
+    background-color: hsl(0, 50%, 50%);
+    font-size: calc(2 * var(--text-size));
+  }
+  12.5%{
+    background-color: hsl(45, 50%, 50%);
+    font-size: calc(3 * var(--text-size));
+  }
+  25%{
+    background-color: hsl(90, 50%, 50%);
+    font-size: calc(4 * var(--text-size));
+  }
+  37.5%{
+    background-color: hsl(135, 50%, 50%);
+    font-size: calc(5 * var(--text-size));
+  }
+  50%{
+    background-color: hsl(180, 50%, 50%);
+    font-size: calc(6 * var(--text-size));
+    border-radius: 50%;
+    transform: translateY(200px);
+  }
+  62.5%{
+    background-color: hsl(225, 50%, 50%);
+    font-size: calc(7 * var(--text-size));
+  }
+  75%{
+    background-color: hsl(270, 50%, 50%);
+    font-size: calc(8 * var(--text-size));
+  }
+  87.5%{
+    background-color: hsl(315, 50%, 50%);
+    font-size: calc(9 * var(--text-size));
+  }
+  100%{
+    background-color: hsl(360, 50%, 50%);
+    font-size: calc(10 * var(--text-size));
+  }
+}

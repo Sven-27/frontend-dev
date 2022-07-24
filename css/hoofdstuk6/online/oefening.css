@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+}
+
+header{
+  --outline: -1px 1px 0 rgb(255, 0, 0),
+				      1px 1px 0 rgb(0, 0, 255),
+				      1px -1px 0 rgb(255, 0, 0),
+			      	-1px -1px 0 rgb(0, 0, 255);
+  --text-ligth: rgb(255, 255, 255);
+  --text-size: 3rem;
+  --p-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+article{
+  background-color: hsl(174, 72%, 56%);
+}
+
+p{
+  text-shadow: var(--outline);
+  color: var(--text-ligth);
+  font-size: var(--text-size);
+}
