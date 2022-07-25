@@ -9,15 +9,13 @@
 
 :root{
   --Roboto: 'Roboto', sans-serif;
-  --Roboto-slab: 'Roboto Slab', serif;
-  
 }
 
 body{
   background-color: rgb(230,230,230);
   inline-size: 100vw;
-  block-size: 100vh;
-  padding: .5rem
+  padding: .5rem;
+  font-family: var(--Roboto);
 }
 
 body > main{
@@ -27,9 +25,17 @@ body > main{
   box-shadow: -2px -2px 4px rgb(200,200,200),
               2px 2px 4px rgb(200,200,200);
   border-radius: 3px;
-  padding: .7rem;
+  padding: .9rem;
+
 }
 
+section > h2{
+  padding-block-end: .8rem;
+  font-size: 1.4rem;
+  text-shadow: 4px 4px 6px rgb(120,120,120);
+}
+
+/* menu */
 nav{
   inline-size: 100%;
   block-size: auto;
@@ -39,20 +45,112 @@ nav{
 
 nav > ul{
   display: flex;
-  justify-content: space-evenly;
   list-style-type: none;
   padding-block: .4rem;
-  
+}
+
+nav li{
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
 }
 
 nav a{
+  inline-size: 100%;
+  text-align: center;
   text-decoration: none;
   color: rgb(0,0,0);
   text-transform: uppercase;
   font-family: var(--Roboto-condensed);
+  font-size: .7rem;
 }
 
-img{
-  width: 100px;
+nav li:not(:last-child)::after{
+  content: '|';
 }
 
+/* article */
+article{
+  padding-block-end: 2rem;
+}
+
+article > h1{
+  font-size: 1.7rem;
+  padding-block: 1rem;
+  text-shadow: 6px 6px 9px rgb(120,120,120);
+}
+
+article > p:first-of-type{
+  padding-block-end: 1rem;
+}
+
+article > p span{
+  margin-inline-end: .3rem;
+}
+
+/* foto section */
+section:first-of-type > img{
+  width: 100%;
+  position: relative;
+  z-index: 0;
+    
+}
+
+section:first-of-type > img:nth-of-type(2),
+section:first-of-type > img:nth-of-type(3){
+  opacity: .6;
+}
+
+hr{
+  border: none;
+  margin-block: 1rem;
+  inline-size: 100%;
+  block-size: 2px;
+  background-image: linear-gradient(to right, rgb(0,0,0), rgb(255,255,255), rgb(0,0,0));
+}
+
+section:last-of-type{
+  display: flex;
+  flex-direction: column;
+}
+
+section:last-of-type > div{
+  --Roboto-slab: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  font-size: 3rem;
+  inline-size: 100%;
+  gap: 5px;
+  
+}
+
+section:last-of-type > div > div{
+  font-family: var(--Roboto-slab);
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(33, 170, 239);
+  background-color: rgb(33, 170, 239);
+  border: 1px solid rgb(0,0,0);
+  border-radius: 40px;
+  inline-size: 9.5rem;
+  block-size: 9.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section:last-of-type > div > div > div{
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 10%;
+  left: 10%;;
+  background-color: rgb(222,222,222);
+  border-radius: 4222px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
