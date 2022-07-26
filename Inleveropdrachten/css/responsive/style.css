@@ -64,6 +64,10 @@ nav a{
   font-size: .7rem;
 }
 
+nav a:hover{
+  color: rgb(200,0,0);
+}
+
 nav li:not(:last-child)::after{
   content: '|';
 }
@@ -175,7 +179,7 @@ section:last-of-type > div > div:last-child:after{
   article{
     column-count: 3;
     column-width: 200px;
-    column-rule: 2px solid rgb(200,200,200);
+    column-rule: 2px solid rgb(255,0,0);
     column-gap: 1.4rem;
   }
 
