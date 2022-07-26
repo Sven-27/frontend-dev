@@ -135,7 +135,7 @@ section:last-of-type > div > div{
   border: 1px solid rgb(0,0,0);
   border-radius: 40px;
   inline-size: calc(100% / 2 - 5px);
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
