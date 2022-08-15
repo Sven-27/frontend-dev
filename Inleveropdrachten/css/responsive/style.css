@@ -83,12 +83,13 @@ article > h1{
   text-shadow: 6px 6px 9px rgb(120,120,120);
 }
 
-article > p:first-of-type{
-  padding-block-end: 1rem;
+article > p:last-of-type{
+  margin-block-start: 1rem;
 }
 
-article > p span{
-  margin-inline-end: .3rem;
+
+article > p::before{
+  content: '\2602';
 }
 
 /* foto section */
@@ -172,15 +173,13 @@ section:last-of-type > div > div:last-child:after{
 
 /* tablet view 768px */
 @media screen and (min-width: 768px){
-  *{
-    font-size: 18px;
-  }
 
   article{
     column-count: 3;
     column-width: 200px;
-    column-rule: 2px solid rgb(255,0,0);
-    column-gap: 1.4rem;
+    column-rule: 1px solid rgb(255,0,0);
+    column-gap: .9rem;
+    /* column-fill: balance; */
   }
 
   article > h1{
@@ -206,6 +205,14 @@ section:last-of-type > div > div:last-child:after{
 
 /* laptop view 1024px */
 @media screen and (min-width: 1024px){
+
+  article{
+    column-count: 3;
+    column-width: 200px;
+    column-rule: 1px solid rgb(255,0,0);
+    column-gap: .9rem;
+  }
+
   section:first-of-type > img{
     inline-size: calc(100% / 4 - .2rem);
   }
