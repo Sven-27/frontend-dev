@@ -60,11 +60,52 @@ const getallen = [1, 2, 3, 10, 20, 30, 40];
 
 // console.log(timesTen())
 
-function smallerThanTen(){
-  const filter = getallen.filter((item) => {
-    return item <= 10
-  })
-  return filter
-}
+// function smallerThanTen(){
+//   const filter = getallen.filter((item) => {
+//     return item <= 10
+//   })
+//   return filter
+// }
 
-console.log(smallerThanTen())
+// console.log(smallerThanTen())
+
+// const multiplyNumbers = getallen.reduce((acc, current) => {
+//  return acc * current
+// },1);
+
+// console.log(multiplyNumbers)
+
+// const auto = {
+//   merk: "Ford",
+//   model: "Fiesta",
+//   deuren: 2,
+//   bouwjaar: 2003,
+//   prijs: 1500,
+//   waarde: function(){
+//     return this.prijs;
+//   }
+// }
+// function Auto(merk, model, deuren, bouwjaar){
+//   this.merk = merk;
+//   this.model = model;
+//   this.deuren = deuren;
+//   this.bouwjaar = bouwjaar;
+//   };
+
+// const auto = new Auto("Ford", "Fiesta", 2, 2003);
+
+// for(const property in auto){
+//   console.log(property + ":" + " " + auto[property])
+// }
+
+const newArr = [];
+
+for(let property in navigator){
+  // document.write(property);
+  const arr = Object.values(property).toLocaleString().replaceAll(",", "");
+  newArr.push(arr);
+}
+// newArr.push(arr)
+console.log(newArr.sort())
+
+
