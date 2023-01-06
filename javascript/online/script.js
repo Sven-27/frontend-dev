@@ -11,13 +11,18 @@
 //   number--;
 // }
 
-var test = 100;
-if (test <= 6 && test >= 200 || test != 2) {
-  window.alert("Good");
-}
-else {
-  window.alert("Bad");
-}
+// var test = 100;
+// if (test <= 6 && test >= 200 || test != 2) {
+//   window.alert("Good");
+// }
+// else {
+//   window.alert("Bad");
+// }
+var a, b, c, d, e;
+var solution = a * b + c + d * e;
+alert(a + " " + b + " " + c + " " + d + " " + e)
+document.write("The total you are looking for is a*b+c+d*e = " + solution);
+
 
 
 // let number = 0;
